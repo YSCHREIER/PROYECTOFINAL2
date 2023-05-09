@@ -1,0 +1,25 @@
+{
+  "xsappname": "proyectofinal",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "uaa.user",
+      "description": "UAA"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": [
+        "uaa.user"
+      ]
+    }
+  ],
+  "oauth2-configuration":{
+
+    "redirect-uris":["https://2d97ae28trial-dev-proyectofinal-approuter.cfapps.us10-001.hana.ondemand.com"]
+    
+    }
+}
